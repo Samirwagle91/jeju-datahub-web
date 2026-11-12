@@ -2,7 +2,7 @@
 > **Jeju Data Hub Multimodal AI (CLIP) Image & Chart Search System**  
 > *Google DeepMind Antigravity 2.0 기반 개발 및 클라우드 배포*
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://jeju-datahub-clip-search.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://samirwagle91-jeju-datahub.streamlit.app)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -103,8 +103,8 @@ KH/
 
 ### 1) 저장소 클론 및 패키지 설치
 ```bash
-git clone https://github.com/your-id/jeju-datahub-clip-search.git
-cd jeju-datahub-clip-search
+git clone https://github.com/Samirwagle91/jeju-datahub-web.git
+cd jeju-datahub-web
 pip install -r requirements.txt
 ```
 
@@ -125,21 +125,22 @@ streamlit run app.py
 ## ☁️ 6. Streamlit Community Cloud 무료 배포 가이드
 
 1. **GitHub 공개 저장소(Public Repository) 생성**:
-   - `jeju-datahub-clip-search`라는 이름으로 GitHub에 Public 리포지토리를 생성합니다.
+   - `jeju-datahub-web`이라는 이름으로 GitHub에 Public 리포지토리를 생성합니다.
    - 본 프로젝트의 코드를 커밋 및 푸시합니다:
      ```bash
      git add .
-     git commit -m "Initial commit for Streamlit Community Cloud deployment"
+     git commit -m "Update URLs and deployment configurations for Samirwagle91"
      git branch -M main
-     git remote add origin https://github.com/your-id/jeju-datahub-clip-search.git
+     git remote add origin https://github.com/Samirwagle91/jeju-datahub-web.git
      git push -u origin main
      ```
 2. **Streamlit Community Cloud 배포 ([share.streamlit.io](https://share.streamlit.io))**:
    - [share.streamlit.io](https://share.streamlit.io)에 접속하여 GitHub 계정으로 로그인합니다.
    - **New app** 버튼을 클릭합니다.
-   - Repository: `your-id/jeju-datahub-clip-search` 선택
+   - Repository: `Samirwagle91/jeju-datahub-web` 선택
    - Branch: `main`
    - Main file path: `app.py`
+   - App URL: `https://samirwagle91-jeju-datahub.streamlit.app` (또는 원하는 이름)
    - **Deploy!** 버튼을 클릭하면 수 분 내에 공개 HTTPS URL이 생성됩니다.
 3. **QR 코드 갱신**:
    - 생성된 공개 URL(예: `https://your-app.streamlit.app`)을 사이드바의 URL 입력란에 입력하면 모바일 접속용 QR 코드가 자동으로 갱신됩니다.

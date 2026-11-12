@@ -17,7 +17,7 @@ import qrcode
 # Import multimodal search engine
 from searcher import JejuMultimodalSearcher, DEFAULT_DATA_DIR
 
-DEFAULT_APP_URL = "https://jeju-datahub-clip-search.streamlit.app"
+DEFAULT_APP_URL = "https://samirwagle91-jeju-datahub.streamlit.app"
 
 
 @st.cache_resource(show_spinner="AI 멀티모달 검색 엔진 로딩 중...")
