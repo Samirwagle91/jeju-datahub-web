@@ -130,7 +130,7 @@ def build_pdf_report(output_filename="project_report.pdf"):
     meta_data = [
         [Paragraph("<b>과제명</b>", body_bold), Paragraph("제주데이터허브 AI 멀티모달(CLIP) 이미지 검색 시스템 구축 및 클라우드 배포", body_style),
          Paragraph("<b>소속/학과</b>", body_bold), Paragraph("제주대학교 컴퓨터공학과", body_style)],
-        [Paragraph("<b>공개 배포 URL</b>", body_bold), Paragraph("<font color='#0066cc'><u>https://samirwagle91-jeju-datahub.streamlit.app</u></font>", body_style),
+        [Paragraph("<b>공개 배포 URL</b>", body_bold), Paragraph("<font color='#0066cc'><u>https://jeju-dataapp-web-sw.streamlit.app</u></font>", body_style),
          Paragraph("<b>제출일자</b>", body_bold), Paragraph("2026년 11월", body_style)],
         [Paragraph("<b>GitHub 저장소</b>", body_bold), Paragraph("<font color='#0066cc'><u>https://github.com/Samirwagle91/jeju-datahub-web</u></font>", body_style),
          Paragraph("<b>개발 도구</b>", body_bold), Paragraph("Google DeepMind Antigravity 2.0, Streamlit Cloud", body_style)]
@@ -213,10 +213,10 @@ def build_pdf_report(output_filename="project_report.pdf"):
         "<b>최고 일치율 95.2%</b>의 고연관도 차트들이 갤러리 피드로 즉시 정렬되며, 50% 슬라이더 필터링이 정상 동작합니다.", body_style
     ))
 
-    # Embed Search Results Screenshot
-    if os.path.exists("search_results_demo.png"):
-        story.append(Image("search_results_demo.png", width=520, height=180))
-        story.append(Paragraph("<font size='7.5' color='#666'>[그림 1] '렌터카' 검색 결과: 50% 슬라이더 필터링, 일치율 95.2% 카드, KSIC 연계 일치 이유 및 본문 하이라이트</font>", subtitle_style))
+    # Embed Actual Live Streamlit Cloud Deployment Screenshot
+    live_img_path = "streamlit_live_screenshot.png" if os.path.exists("streamlit_live_screenshot.png") else "search_results_demo.png"
+    story.append(Image(live_img_path, width=520, height=210))
+    story.append(Paragraph("<font size='7.5' color='#666'>[그림 1] 실제 Streamlit Cloud 클라우드 배포 및 동작 화면 (https://jeju-dataapp-web-sw.streamlit.app): '렌터카' 검색 및 일치율 필터 슬라이더 동작</font>", subtitle_style))
 
     story.append(Spacer(1, 4))
 
@@ -227,7 +227,7 @@ def build_pdf_report(output_filename="project_report.pdf"):
         [
             Paragraph(
                 "<b>[Streamlit Community Cloud 공개 배포]</b><br/>"
-                "• <b>웹 서비스 접속 URL</b>: <font color='#0066cc'><u>https://samirwagle91-jeju-datahub.streamlit.app</u></font><br/>"
+                "• <b>웹 서비스 접속 URL</b>: <font color='#0066cc'><u>https://jeju-dataapp-web-sw.streamlit.app</u></font><br/>"
                 "• <b>GitHub 저장소 URL</b>: <font color='#0066cc'><u>https://github.com/Samirwagle91/jeju-datahub-web</u></font><br/>"
                 "• <b>제출 항목 완료 여부</b>: 공개 URL, QR 코드, GitHub URL, 프로젝트 보고서 일체 완료<br/>"
                 "• <b>모바일 최적화</b>: 우측 QR 코드를 스마트폰 카메라로 스캔하여 즉시 모바일 웹앱 탐색 가능",

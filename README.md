@@ -2,7 +2,7 @@
 > **Jeju Data Hub Multimodal AI (CLIP) Image & Chart Search System**  
 > *Google DeepMind Antigravity 2.0 기반 개발 및 클라우드 배포*
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://samirwagle91-jeju-datahub.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://jeju-dataapp-web-sw.streamlit.app)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -140,7 +140,7 @@ streamlit run app.py
    - Repository: `Samirwagle91/jeju-datahub-web` 선택
    - Branch: `main`
    - Main file path: `app.py`
-   - App URL: `https://samirwagle91-jeju-datahub.streamlit.app` (또는 원하는 이름)
+   - App URL: `https://jeju-dataapp-web-sw.streamlit.app` (또는 원하는 이름)
    - **Deploy!** 버튼을 클릭하면 수 분 내에 공개 HTTPS URL이 생성됩니다.
 3. **QR 코드 갱신**:
    - 생성된 공개 URL(예: `https://your-app.streamlit.app`)을 사이드바의 URL 입력란에 입력하면 모바일 접속용 QR 코드가 자동으로 갱신됩니다.
